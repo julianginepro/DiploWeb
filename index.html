@@ -3,30 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - DiploWeb</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Ginepro & Asociados | Inicio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Estas en el INICIO. Gracias por visitarnos!</h1>
+    <a href="#">
+        <img src="./assets/logo.png" alt="Logo de Estudio Juridico">
+    </a>
+    <header>
+        <h1>Estudio Jurídico Ginepro & Asociados</h1>
+        <h2>Casos personalizados</h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="./pages/nosotros.html">El Estudio</a>
+            </li>
+            <li>
+                <a href="./pages/areas.html">Areas de Practicas</a>
+            </li>
+            <li>
+                <a href="./pages/equipo.html">Abogados</a>
+            </li>
+            <li>
+                <a href="./pages/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+                <h2>Asesoramiento Legal Integral y Eficiente</h2>
+                <img src="./assets/contenido/asesoramiento-juridico.jpg" alt="Asesoramiento">
+                <p>Defendemos sus derechos e intereses con más de 15 años de experiencia y una sólida trayectoria en el sector jurídico.</p>
+                <a href="./pages/contacto.html">Consulta gratuita / Agenda una cita</a>
+        </section>
+        <section>
+                <h2>Áreas de Especialización</h2>
+                <p>Departamentos legales dedicados a resolver contingencias complejas:</p>
+        <div>
+            <article>
+                <h3>Derecho Civil y Comercial</h3>
+                <p>Redacción de contratos, litigios patrimoniales, desalojos y reclamos de daños y perjuicios.</p>
+            </article>
+
+            <article>
+                <h3>Derecho Laboral y Seguridad Social</h3>
+                <p>Patrocinio letrado en despidos, accidentes de trabajo (ART), reclamos salariales y acuerdos.</p>
+            </article>
+
+            <article>
+                <h3>Derecho de Familia y Sucesiones</h3>
+                <p>Procesos sucesorios, acuerdos de divorcio, alimentos y régimen de comunicación.</p>
+            </article>
+
+            <article>
+                <h3>Derecho Corporativo y Empresarial</h3>
+                <p>Constitución de sociedades comerciales, asesoría preventiva y resolución de conflictos entre socios.</p>
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Credo por Julian</p>
+    <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
     <ul>
         <li>
-            <a href="./index.html">Inicio</a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./assets/facebook.png" alt="Facebook">
+            </a>
         </li>
         <li>
-            <a href="./pages/contacto.html">Contacto</a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/instagram.png" alt=""Instagram">
+            </a>
         </li>
         <li>
-            <a href="./pages/galeria.html">Galeria</a>
+            <a href="https://www.spotify.com/" target="_blank">
+                <img src="./assets/spotify.png" alt="Spotify">
+            </a>
         </li>
         <li>
-            <a href="./pages/preguntas.html">Preguntas</a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <img src="./assets/whatsapp.png" alt="WhatsApp">
+            </a>
         </li>
         <li>
-            <a href="./pages/productos.html">Productos</a>
+            <a href="https://x.com" target="_blank">
+                <img src="./assets/x.png" alt="X (Twitter)">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="./assets/yt.png" alt="YouTube">
+            </a>
         </li>
     </ul>
-<footer>
-        
-</footer>
+    <div class="contenedor-footer">
+      <div class="footer-columna">
+        <h4>Ginepro &amp; Asociados</h4>
+        <p>Litigio y asesoría letrada con estricta confidencialidad y ética profesional.</p>
+      </div>
+
+      <div class="footer-columna">
+        <h4>Sede Central</h4>
+        <p>Av. Corrientes 1450, Piso 8, CABA<br>Teléfono: (011) 4372-8890</p>
+      </div>
+
+      <div class="footer-columna">
+        <h4>Matrícula</h4>
+        <p>CPACF T° 42 F° 318.<br>Atención con cita previa.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
