@@ -16,6 +16,8 @@
     <!-- Bootstrap 5.3 CSS vía CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- AOS CSS vía CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <!-- Hoja de estilos personalizada -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -52,12 +54,12 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <!-- SECCION HERO / PRESENTACION -->
+        <!-- SECCION HERO / PRESENTACION (Animación CSS propia) -->
         <section class="seccion-hero">
             <h1>Estudio Jurídico Ginepro &amp; Asociados</h1>
             <p>Atención legal personalizada, ética y de excelencia en la Ciudad de Buenos Aires.</p>
 
-            <article>
+            <article class="animacion-entrada">
                 <h2>Asesoramiento Legal Integral y Eficiente</h2>
                 <figure>
                     <img src="./assets/contenido/asesoramiento-juridico.png"
@@ -73,13 +75,12 @@
         </section>
 
         <!-- COMPONENTE BOOTSTRAP: CAROUSEL GALERÍA INSTITUCIONAL -->
-        <section class="seccion-galeria">
+        <section class="seccion-galeria" data-aos="fade-up">
             <h2>Nuestra Sede y Práctica Profesional</h2>
             <p>Conozca nuestras instalaciones y el entorno donde trabajamos diariamente en la defensa de sus derechos:
             </p>
 
             <div id="carouselEstudio" class="carousel slide carousel-estudio shadow-lg" data-bs-ride="carousel">
-                <!-- Indicadores -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselEstudio" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Diapositiva 1"></button>
@@ -89,7 +90,6 @@
                         aria-label="Diapositiva 3"></button>
                 </div>
 
-                <!-- Diapositivas -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/contenido/estudio-oficinas.png" class="d-block w-100"
@@ -117,7 +117,6 @@
                     </div>
                 </div>
 
-                <!-- Flechas de navegación -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstudio"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -131,78 +130,72 @@
             </div>
         </section>
 
-        <!-- SECCION CIFRAS DESTACADAS (METRICAS / LOGROS) -->
-        <section class="seccion-cifras">
+        <!-- SECCION CIFRAS DESTACADAS (Animación con AOS) -->
+        <section class="seccion-cifras" data-aos="fade-up">
             <h2>Nuestra Trayectoria en Cifras</h2>
             <p>Resultados comprobables que respaldan nuestro compromiso profesional:</p>
             <div class="cifras-grid">
-                <article>
+                <article data-aos="zoom-in" data-aos-delay="50">
                     <h3>+15</h3>
                     <p>Años de experiencia continua en el ámbito judicial nacional e internacional.</p>
                 </article>
-                <article>
+                <article data-aos="zoom-in" data-aos-delay="150">
                     <h3>+1.200</h3>
                     <p>Casos y litigios resueltos favorablemente para empresas y particulares.</p>
                 </article>
-                <article>
+                <article data-aos="zoom-in" data-aos-delay="250">
                     <h3>98%</h3>
                     <p>Índice de satisfacción y lealtad de nuestros representados.</p>
                 </article>
-                <article>
+                <article data-aos="zoom-in" data-aos-delay="350">
                     <h3>24h</h3>
                     <p>Plazo máximo de respuesta y diagnóstico inicial ante contingencias urgentes.</p>
                 </article>
             </div>
         </section>
 
-        <!-- SECCION AREAS DE ESPECIALIZACION -->
-        <section class="seccion-areas">
+        <!-- SECCION AREAS DE ESPECIALIZACION (Animación con AOS) -->
+        <section class="seccion-areas" data-aos="fade-up">
             <h2>Áreas de Práctica y Especialización</h2>
             <p>Departamentos jurídicos especializados y capacitados para resolver contingencias de alta complejidad:</p>
 
             <div class="areas-grid">
-                <!-- AREA 1 -->
-                <article class="area-card">
+                <article class="area-card" data-aos="fade-up" data-aos-delay="50">
                     <h3>Derecho Civil y Comercial</h3>
                     <p>Redacción, revisión y auditoría contractual, litigios por incumplimientos, ejecuciones de
                         garantías y reclamos integrales de daños y perjuicios.</p>
                     <a href="./pages/areas.html#civil" class="btn-estudio">Conocer más sobre Derecho Civil</a>
                 </article>
 
-                <!-- AREA 2 -->
-                <article class="area-card">
+                <article class="area-card" data-aos="fade-up" data-aos-delay="100">
                     <h3>Derecho Laboral y Seguridad Social</h3>
                     <p>Asesoramiento integral tanto a empleadores como a trabajadores en despidos, indemnizaciones,
                         accidentes laborales (ART), acuerdos ante SECLO y auditorías preventivas.</p>
                     <a href="./pages/areas.html#laboral" class="btn-estudio">Conocer más sobre Derecho Laboral</a>
                 </article>
 
-                <!-- AREA 3 -->
-                <article class="area-card">
+                <article class="area-card" data-aos="fade-up" data-aos-delay="150">
                     <h3>Derecho de Familia y Sucesiones</h3>
                     <p>Gestión humana y confidencial de procesos sucesorios, acuerdos patrimoniales prenupciales,
                         divorcios por presentación unilateral o conjunta, cuota alimentaria y régimen comunicacional.</p>
                     <a href="./pages/areas.html#familia" class="btn-estudio">Conocer más sobre Familia</a>
                 </article>
 
-                <!-- AREA 4 -->
-                <article class="area-card">
+                <article class="area-card" data-aos="fade-up" data-aos-delay="200">
                     <h3>Derecho Corporativo y Empresarial</h3>
                     <p>Constitución y registro de sociedades (SRL, SA, SAS), reestructuraciones societarias, fusiones,
                         adquisiciones y compliance legal preventivo para PyMEs y grandes empresas.</p>
                     <a href="./pages/areas.html#corporativo" class="btn-estudio">Conocer más sobre Empresas</a>
                 </article>
 
-                <!-- AREA 5 -->
-                <article class="area-card">
+                <article class="area-card" data-aos="fade-up" data-aos-delay="250">
                     <h3>Derecho Inmobiliario y Real Estate</h3>
                     <p>Asesoría jurídica en compraventas y locaciones de inmuebles, juicios de desalojo, usucapión,
                         escrituraciones y administración legal de desarrollos urbanísticos.</p>
                     <a href="./pages/areas.html#inmobiliario" class="btn-estudio">Conocer más sobre Real Estate</a>
                 </article>
 
-                <!-- AREA 6 -->
-                <article class="area-card">
+                <article class="area-card" data-aos="fade-up" data-aos-delay="300">
                     <h3>Derecho Penal Económico</h3>
                     <p>Defensa y querellas en delitos económicos, tributarios, aduaneros, fraudes corporativos,
                         ciberdelitos y propiedad intelectual.</p>
@@ -212,7 +205,7 @@
         </section>
 
         <!-- SECCION METODOLOGIA DE TRABAJO -->
-        <section class="seccion-metodologia">
+        <section class="seccion-metodologia" data-aos="fade-up">
             <h2>Metodología de Trabajo: Nuestro Proceso</h2>
             <p>Un método claro, transparente y riguroso desde el primer contacto:</p>
             <ol>
@@ -240,7 +233,7 @@
         </section>
 
         <!-- SECCION DIFERENCIAL Y MULTIMEDIA -->
-        <section class="seccion-diferencial">
+        <section class="seccion-diferencial" data-aos="fade-up">
             <h2>¿Por qué elegirnos? Conozca nuestro valor diferencial</h2>
 
             <figure>
@@ -258,7 +251,7 @@
         </section>
 
         <!-- FINAL DEL INDEX / CONSULTA PROSPECTOS -->
-        <section class="seccion-cta-final">
+        <section class="seccion-cta-final" data-aos="fade-up">
             <h2>¿Tiene una consulta legal?</h2>
             <p>Coordine una cita en nuestras oficinas o solicite un diagnóstico letrado de su caso.</p>
             <a href="./pages/contacto.html" class="btn-estudio">Ir al formulario de contacto y preguntas frecuentes</a>
@@ -355,7 +348,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- AOS Bundle JS vía CDN e inicialización -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 650,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 60
+        });
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
